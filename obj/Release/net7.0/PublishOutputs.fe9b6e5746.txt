@@ -1,0 +1,8 @@
+P:\SmartLearn-Afgangsprojekt\Programmering\ActiveLightsWebsite\ActiveLights_MVC\obj\Release\net7.0\PubTmp\Out\ActiveLights_MVC.exe
+P:\SmartLearn-Afgangsprojekt\Programmering\ActiveLightsWebsite\ActiveLights_MVC\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+P:\SmartLearn-Afgangsprojekt\Programmering\ActiveLightsWebsite\ActiveLights_MVC\obj\Release\net7.0\PubTmp\Out\appsettings.json
+P:\SmartLearn-Afgangsprojekt\Programmering\ActiveLightsWebsite\ActiveLights_MVC\obj\Release\net7.0\PubTmp\Out\ActiveLights_MVC.dll
+P:\SmartLearn-Afgangsprojekt\Programmering\ActiveLightsWebsite\ActiveLights_MVC\obj\Release\net7.0\PubTmp\Out\ActiveLights_MVC.deps.json
+P:\SmartLearn-Afgangsprojekt\Programmering\ActiveLightsWebsite\ActiveLights_MVC\obj\Release\net7.0\PubTmp\Out\ActiveLights_MVC.runtimeconfig.json
+P:\SmartLearn-Afgangsprojekt\Programmering\ActiveLightsWebsite\ActiveLights_MVC\obj\Release\net7.0\PubTmp\Out\ActiveLights_MVC.pdb
+P:\SmartLearn-Afgangsprojekt\Programmering\ActiveLightsWebsite\ActiveLights_MVC\obj\Release\net7.0\PubTmp\Out\Newtonsoft.Json.dll
