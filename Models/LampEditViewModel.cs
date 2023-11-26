@@ -42,15 +42,19 @@ namespace ActiveLights_MVC.Models
         public int LevelOff { get; set; }
         [BindProperty]
         [DisplayName("Time On Evening")]
+        [DataType(DataType.Time)]
         public TimeOnly TimeLightOnEvening { get; set; }
         [BindProperty]
         [DisplayName("Time LowLevel Evening")]
+        [DataType(DataType.Time)]
         public TimeOnly TimeLightLowNight { get; set; }
         [BindProperty]
         [DisplayName("Time On Morning")]
+        [DataType(DataType.Time)]
         public TimeOnly TimeLightOnMorning { get; set; }
         [BindProperty]
         [DisplayName("Time Off Morning")]
+        [DataType(DataType.Time)]
         public TimeOnly TimeLightOffMorning { get; set; }
     }
 }
