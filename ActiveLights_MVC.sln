@@ -1,0 +1,30 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33712.159
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ActiveLights_MVC", "ActiveLights_MVC.csproj", "{E51F73D4-24BE-45DA-B66F-F608BD12D560}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{313B1939-6478-45BA-9291-45557429D7F3}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E51F73D4-24BE-45DA-B66F-F608BD12D560}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E51F73D4-24BE-45DA-B66F-F608BD12D560}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E51F73D4-24BE-45DA-B66F-F608BD12D560}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E51F73D4-24BE-45DA-B66F-F608BD12D560}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {80CD0A9A-A91F-4B36-8E94-DDE8163CA0F9}
+	EndGlobalSection
+EndGlobal

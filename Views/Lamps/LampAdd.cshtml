@@ -1,0 +1,100 @@
+﻿@model LampEditViewModel
+@{
+    ViewData["Title"] = "Add Lamp";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Add Lamp </h1>
+</div>
+
+<h4>New Lamp</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="@Model.LampItemId" class="control-label"></label>
+                <input asp-for="@Model.LampItemId" class="form-control"/>
+                <span asp-validation-for="@Model.LampItemId" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Name" class="control-label"></label>
+                <input asp-for="@Model.Name" class="form-control" />
+                <span asp-validation-for="@Model.Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.Location" class="control-label"></label>
+                <input asp-for="@Model.Location" class="form-control"/>
+                <span asp-validation-for="@Model.Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.InstallationDate" class="control-label"></label>
+                <input asp-for="@Model.InstallationDate" class="form-control"/>
+                <span asp-validation-for="@Model.InstallationDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.IpAddress" class="control-label"></label>
+                <input asp-for="@Model.IpAddress" class="form-control" />
+                <span asp-validation-for="@Model.IpAddress" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.LampGroup" class="control-label"></label>
+                <input asp-for="@Model.LampGroup" class="form-control" />
+                <span asp-validation-for="@Model.LampGroup" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.NeighborsBack" class="control-label"></label>
+                <input asp-for="@Model.NeighborsBack" class="form-control" />
+                <span asp-validation-for="@Model.NeighborsBack" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.NeighborsForward" class="control-label"></label>
+                <input asp-for="@Model.NeighborsForward" class="form-control" />
+                <span asp-validation-for="@Model.NeighborsForward" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.LevelHigh" class="control-label"></label>
+                <input asp-for="@Model.LevelHigh" class="form-control" />
+                <span asp-validation-for="@Model.LevelHigh" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.LevelLow" class="control-label"></label>
+                <input asp-for="@Model.LevelLow" class="form-control" />
+                <span asp-validation-for="@Model.LevelLow" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.LevelOff" class="control-label"></label>
+                <input asp-for="@Model.LevelOff" class="form-control" />
+                <span asp-validation-for="@Model.LevelOff" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.TimeLightOnEvening" class="control-label"></label>
+                <input asp-for="@Model.TimeLightOnEvening" class="form-control" />
+                <span asp-validation-for="@Model.TimeLightOnEvening" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.TimeLightLowNight" class="control-label"></label>
+                <input asp-for="@Model.TimeLightLowNight" class="form-control" />
+                <span asp-validation-for="@Model.TimeLightLowNight" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.TimeLightOnMorning" class="control-label"></label>
+                <input asp-for="@Model.TimeLightOnMorning" class="form-control" />
+                <span asp-validation-for="@Model.TimeLightOnMorning" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="@Model.TimeLightOffMorning" class="control-label"></label>
+                <input asp-for="@Model.TimeLightOffMorning" class="form-control" />
+                <span asp-validation-for="@Model.TimeLightOffMorning" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Add" class="btn btn-success" />
+            </div>
+        </form>
+    </div>
+</div>
+<p></p>
+<div>
+    <a asp-action="AllLamps" class="btn btn-primary">Back to List</a>
+</div>

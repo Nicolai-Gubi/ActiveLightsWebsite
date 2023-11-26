@@ -1,0 +1,57 @@
+﻿
+@model IEnumerable<LampViewModel>
+@{
+    ViewData["Title"] = "All Lamps";
+}
+<div class="text-center">
+    <h1 class="display-4">All Lamps</h1>
+</div>
+
+<div class="container">
+        <a asp-action="LampAdd" class="btn btn-primary">Add New Lamp</a>
+</div>
+<table class="table table-sm table-striped table-bordered m-2">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Lamp Id</th>
+            <th>Location</th>
+            <th>Time On Evening</th>
+            <th>Time LowLevel Evening</th>
+            <th>Time On Morning</th>
+            <th>Time Off Morning</th>
+            <th>Light Level</th>
+            <th>Status</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var lamp in Model)
+        {
+            <tr>
+                <td>@lamp.Name</td>
+                <td>@lamp.LampItemId</td>
+                <td>@lamp.Location</td>
+                <td>@lamp.TimeLightOnEvening</td>
+                <td>@lamp.TimeLightLowNight</td>
+                <td>@lamp.TimeLightOnMorning</td>
+                <td>@lamp.TimeLightOffMorning</td>
+                <td>@lamp.CurrentLightLevel</td>
+                @{
+                    if (lamp.CurrentErrorStatus == "Ok")
+                    {
+                        <td class="table-success">@lamp.CurrentErrorStatus</td>
+                    }else
+                    {
+                        <td class="table-danger">@lamp.CurrentErrorStatus</td>
+                    }
+                }
+                <td class="btn-group">
+                    <a asp-action="LampDetails" asp-route-id="@lamp.LampItemId" class="btn btn-info">Details</a>
+                    <a asp-action="LampOverride" asp-route-id="@lamp.LampItemId" class="btn btn-warning">Override</a>
+                    <a asp-action="LampDelete" asp-route-id="@lamp.LampItemId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

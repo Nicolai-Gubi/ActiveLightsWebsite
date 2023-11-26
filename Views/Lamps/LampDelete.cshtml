@@ -1,0 +1,105 @@
+﻿@model LampEditViewModel
+@{
+    ViewData["Title"] = "Delete Lamps";
+}
+<div class="text-center">
+    <h1 class="display-4">Delete Lamp</h1>
+</div>
+
+
+<div>
+    <h4>Are you sure you want to delete lamp: @Model.LampItemId</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.Location)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.Location)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.InstallationDate)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.InstallationDate)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.IpAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.IpAddress)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LampGroup)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LampGroup)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NeighborsBack)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NeighborsBack)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.NeighborsForward)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.NeighborsForward)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LevelHigh)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LevelHigh)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LevelLow)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LevelLow)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.LevelOff)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.LevelOff)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TimeLightOnEvening)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TimeLightOnEvening)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TimeLightLowNight)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TimeLightLowNight)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TimeLightOnMorning)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TimeLightOnMorning)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.TimeLightOffMorning)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.TimeLightOffMorning)
+        </dd>
+    </dl>
+</div>
+
+<form asp-action="Delete">
+    <input type="hidden" asp-for="@Model.LampItemId" />
+    <input type="submit" value="Delete" class="btn btn-danger" /> |
+    <a asp-action="AllLamps" class="btn btn-primary">Back to List</a>
+</form>
